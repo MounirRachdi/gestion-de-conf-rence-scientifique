@@ -1,0 +1,463 @@
+﻿ ul.art-vmenu a 
+{
+   display: block;
+   cursor: pointer;
+   z-index:0;
+   text-decoration: none;
+   font-family: Arial, Helvetica, Sans-Serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 11px;
+   margin-left:0;
+   margin-right:0;
+   position:relative;
+}
+
+ul.art-vmenu li{
+   position:relative;
+}
+
+ul.art-vmenu>li>a 
+{
+   color: #41576C;
+   padding: 0 7px 0 20px;
+   height: 32px;
+   line-height: 32px;
+   white-space: nowrap;
+}
+
+ul.art-vmenu>li>a.active {
+   color: #D6E6F0;
+}
+ul.art-vmenu a:hover, ul.art-vmenu a.active:hover {
+   color: #263340;
+}
+
+ul.art-vmenu>li>a:before, ul.art-vmenu>li>a:after 
+{
+   position: absolute;
+   display: block;
+   content: ' ';
+   z-index:-1;
+   background-image: url('../image/vmenuitem.png');
+   top:0;
+   height:32px;
+}
+
+ul.art-vmenu>li>a:before{
+   left: 0;
+   right: 15px;
+   background-position: top left;
+}
+ul.art-vmenu>li>a:after{
+   width: 15px;
+   right: 0;
+   background-position: top right;
+}
+ul.art-vmenu>li>a.active:before {
+   background-position: bottom left;
+}
+ul.art-vmenu>li>a.active:after {
+   background-position: bottom right;
+}
+ul.art-vmenu>li>a:hover:before  {
+   background-position: center left;
+}
+ul.art-vmenu>li>a:hover:after {
+   background-position: center right;
+}
+
+ul.art-vmenu>li{
+   margin-top:1px;
+}
+ul.art-vmenu>li>ul{
+   margin-top:1px;
+   padding-bottom: 0;
+}
+ul.art-vmenu>li:first-child{
+   margin-top:0;
+}                                                     
+
+ul.art-vmenu>li:before, ul.art-vmenu>li>ul:before{
+   display: block;
+   position:absolute;
+   content: ' ';
+   height: 0;
+   top:-1px;
+   left:0;
+   right:0;
+   z-index:1;
+   border-bottom: solid 1px #CFD9E2;
+}
+
+ul.art-vmenu>li:first-child:before,ul.art-vmenu>li:first-child:after{
+   display:none;
+}  
+
+/* end VMenuItem */
+
+/* begin VMenuSubItem */
+ul.art-vmenu ul li{
+   margin: 0;
+   padding: 0;
+}
+ul.art-vmenu li li, ul.art-vmenu li li a {
+   position:relative;
+}
+
+ul.art-vmenu ul a
+{
+   display: block;
+   position:relative;
+   white-space: nowrap;
+   height: 24px;
+   overflow: visible;
+   background-image: url('../image/vsubitem.png');
+   background-repeat: repeat-x;
+   background-position: top left;
+   padding:0;
+   padding-left:15px;
+   padding-right:15px;
+   line-height: 24px;
+   color: #2F617F;
+   margin-left: 0;
+   margin-right: 0;
+}
+
+ul.art-vmenu ul a.active{
+   background-position: bottom left;
+}
+ul.art-vmenu ul a:hover{
+   background-position: center left;
+   line-height: 24px;
+   color: #2F617F;
+   margin-left: 0;
+   margin-right: 0;
+}
+ul.art-vmenu ul li li a:hover, ul.art-vmenu ul li li a:hover.active{
+   background-position: left center;
+}
+
+ul.art-vmenu ul a:link, ul.art-vmenu ul a:visited, ul.art-vmenu ul a:active
+{
+   line-height: 24px;
+   color: #2F617F;
+   margin-left: 0;
+   margin-right: 0;
+}
+
+ul.art-vmenu>li>ul>li:first-child{
+   padding-top: 0;
+   margin-top:0;
+}
+ 
+ul.art-vmenu li li{
+   position:relative;
+   margin-top:1px;
+}
+
+ul.art-vmenu li li:after
+{
+   display: block;
+   position:absolute;
+   content: ' ';
+   height: 0;
+   top:-1px;
+   left:0;
+   right:0;
+   z-index:1;
+   border-bottom: solid 1px #CFD9E2;
+}
+
+ul.art-vmenu li li:before
+{
+   display: block;
+   position:absolute;
+   content: ' ';
+   left:0;
+   right:0;
+   top: -1px;
+   z-index:0;
+   height: 1px;
+}
+ul.art-vmenu>li>ul>li:first-child:before,ul.art-vmenu>li>ul>li:first-child:after{
+   display:none;
+}
+
+ul.art-vmenu ul ul a{
+   padding-left:30px;
+}
+ul.art-vmenu ul ul ul a{
+   padding-left:45px;
+}
+ul.art-vmenu ul ul ul ul a{
+   padding-left:60px;
+}
+ul.art-vmenu ul ul ul ul ul a{
+   padding-left:75px;
+}
+
+ul.art-vmenu ul li a.active {
+   color: #5F9FC4;
+}
+ul.art-vmenu ul li a:hover, ul.art-vmenu ul li a:hover.active {
+   color: #41576C;
+}
+
+ 
+ 
+ /*   ul.art-vmenu, ul.art-vmenu ul
+{
+   list-style: none;
+   display: block;
+}
+
+ul.art-vmenu, ul.art-vmenu li
+{
+   display: block;
+   margin: 0;
+   padding: 0;
+   width: 212px;
+   line-height: 0;
+}
+
+ul.art-vmenu
+{
+   margin-top: 0;
+   margin-bottom: 0;
+   margin: 0;
+}
+
+ul.art-vmenu ul
+{
+   display: none;
+   margin: 0;
+   padding: 0;
+   position:relative;
+   margin-left: 0;
+   margin-right: 0;
+}
+
+ul.art-vmenu ul.active
+{
+   display: block;
+}
+
+ul.art-vmenu li, ul.art-vmenu li ul, ul.art-vmenu li ul li
+{
+   list-style-type: none;
+}
+
+
+ul.art-vmenu a 
+{
+   display: block;
+   cursor: pointer;
+   z-index:0;
+   text-decoration: none;
+   font-family: Arial, Helvetica, Sans-Serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 11px;
+   margin-left:0;
+   margin-right:0;
+   position:relative;
+}
+
+ul.art-vmenu li{
+   position:relative;
+}
+
+ul.art-vmenu>li>a 
+{
+   color: #41576C;
+
+   padding: 0 7px 0 20px;
+   height: 32px;
+   line-height: 32px;
+   white-space: nowrap;
+}
+
+ul.art-vmenu>li>a.active {
+  color: #D6E6F0;
+  
+}
+ul.art-vmenu a:hover, ul.art-vmenu a.active:hover {
+   color: #263340;
+ 
+}
+
+ul.art-vmenu>li>a:before, ul.art-vmenu>li>a:after 
+{
+   position: absolute;
+   display: block;
+   content: ' ';
+   z-index:-1;
+  background-image: url('../image/vmenuitem.png');
+   top:0;
+   height:32px;
+}
+
+ul.art-vmenu>li>a:before{
+   left: 0;
+   right: 15px;
+   background-position: top left;
+}
+ul.art-vmenu>li>a:after{
+   width: 15px;
+   right: 0;
+   background-position: top right;
+}
+ul.art-vmenu>li>a.active:before {
+   background-position: bottom left;
+}
+ul.art-vmenu>li>a.active:after {
+   background-position: bottom right;
+}
+ul.art-vmenu>li>a:hover:before  {
+   background-position: center left;
+}
+ul.art-vmenu>li>a:hover:after {
+   background-position: center right;
+}
+
+ul.art-vmenu>li{
+   margin-top:1px;
+	top: 0px;
+	left: 47px;
+}
+ul.art-vmenu>li>ul{
+   margin-top:1px;
+   padding-bottom: 0;
+}
+ul.art-vmenu>li:first-child{
+   margin-top:0;
+}                                                     
+
+ul.art-vmenu>li:before, ul.art-vmenu>li>ul:before{
+   display: block;
+   position:absolute;
+   content: ' ';
+   height: 0;
+   top:-1px;
+   left:0;
+   right:0;
+   z-index:1;
+   border-bottom: solid 1px #CFD9E2;
+}
+
+ul.art-vmenu>li:first-child:before,ul.art-vmenu>li:first-child:after{
+   display:none;
+}  
+
+
+ul.art-vmenu ul li{
+   margin: 0;
+   padding: 0;
+}
+ul.art-vmenu li li, ul.art-vmenu li li a {
+   position:relative;
+}
+
+ul.art-vmenu ul a
+{
+   display: block;
+   position:relative;
+   white-space: nowrap;
+   height: 24px;
+   overflow: visible;
+  background-image: url('../image/vsubitem.png');
+   background-repeat: repeat-x;
+   background-position: top left;
+   padding:0;
+   padding-left:15px;
+   padding-right:15px;
+   line-height: 24px;
+   color: #2F617F;
+   margin-left: 0;
+   margin-right: 0;
+}
+
+ul.art-vmenu ul a.active{
+   background-position: bottom left;
+}
+ul.art-vmenu ul a:hover{
+   background-position: center left;
+   line-height: 24px;
+   color: #2F617F;
+ 
+   margin-left: 0;
+   margin-right: 0;
+}
+ul.art-vmenu ul li li a:hover, ul.art-vmenu ul li li a:hover.active{
+   background-position: left center;
+}
+
+ul.art-vmenu ul a:link, ul.art-vmenu ul a:visited, ul.art-vmenu ul a:active
+{
+   line-height: 24px;
+   color: #2F617F;
+ 
+   margin-left: 0;
+   margin-right: 0;
+}
+
+ul.art-vmenu>li>ul>li:first-child{
+   padding-top: 0;
+   margin-top:0;
+}
+ 
+ul.art-vmenu li li{
+   position:relative;
+   margin-top:1px;
+}
+
+ul.art-vmenu li li:after
+{
+   display: block;
+   position:absolute;
+   content: ' ';
+   height: 0;
+   top:-1px;
+   left:0;
+   right:0;
+   z-index:1;
+   border-bottom: solid 1px #CFD9E2;
+}
+
+ul.art-vmenu li li:before
+{
+   display: block;
+   position:absolute;
+   content: ' ';
+   left:0;
+   right:0;
+   top: -1px;
+   z-index:0;
+   height: 1px;
+}
+ul.art-vmenu>li>ul>li:first-child:before,ul.art-vmenu>li>ul>li:first-child:after{
+   display:none;
+}
+
+ul.art-vmenu ul ul a{
+   padding-left:30px;
+}
+ul.art-vmenu ul ul ul a{
+   padding-left:45px;
+}
+ul.art-vmenu ul ul ul ul a{
+   padding-left:60px;
+}
+ul.art-vmenu ul ul ul ul ul a{
+   padding-left:75px;
+}
+
+ul.art-vmenu ul li a.active {
+   color: #5F9FC4;
+}
+ul.art-vmenu ul li a:hover, ul.art-vmenu ul li a:hover.active {
+   color: #41576C;
+ 
+}
+   */

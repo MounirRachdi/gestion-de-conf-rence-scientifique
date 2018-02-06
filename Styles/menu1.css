@@ -1,0 +1,52 @@
+﻿body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	font-size: 80%;
+	font-weight: bold;
+	background: #FFF;
+	}
+
+h2 {
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif;
+	color: #000;
+	margin: 0px;
+	padding: 0px 0px 0px 15px;
+}
+	
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+img {
+    border: none;
+} 
+
+/*- Menu 9--------------------------- */
+	
+#menu9 {
+	width: 200px;
+	margin: 10px;
+	}
+	
+#menu9 li a {
+	height: 32px;
+  	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	height: 24px;
+	text-decoration: none;
+	}	
+	
+#menu9 li a:link, #menu9 li a:visited {
+	color: #FFF;
+	display: block;
+	background:  url(image/menu9.gif);
+	padding: 8px 0 0 35px;
+	}
+	
+#menu9 li a:hover, #menu9 li #current {
+	color: #FFF;
+	background:  url(image/menu9.gif) 0 -32px;
+	padding: 8px 0 0 35px;
+	}
