@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Acceuil</title>
+<meta name="keywords" content="corporate blue, theme, free templates, website templates, CSS, HTML" />
+<meta name="description" content="Corporate Blue Theme is a free website template provided by tooplate.com" />
+<link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+  
+  
+ .submit {
+	margin: 5px 0px;
+	padding: 3px 14px;
+	font-weight: bold;
+	border: 1px solid #dfdfdf;
+	background: #F3F3F3;
+}
+  </style>
+<script language="javascript" type="text/javascript">
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+
+var password = document.getElementById("pwd")
+  , confirm_password = document.getElementById("confirmpwd");
+
+function validatePassword(){
+  if(pwd.value != confirmpwd.value) {
+    confirmpwd.setCustomValidity("incohérence entre mot de passe et confirmation ");
+  } else {
+    confirmpwd.setCustomValidity('');
+  }
+}
+
+pwd.onchange = validatePassword;
+confirmpwd.onkeyup = validatePassword;
+
+
+</script>
+<!--   Free Website Template by t o o p l a t e . c o m   -->
+</head>
+
+<body style="height:auto">
+
+<div id="tooplate_header_wrapper">
+	<div id="tooplate_header">
+    
+    	<div id="site_title">
+            <h1><a rel="nofollow" href="http://www.tooplate.com"><!--<img src="images/tooplate_logo.png" alt="logo" />--><span>System de soumission des papiers </span></a></h1>
+        </div> <!-- end of site_title -->
+		
+        <div id="header_right">
+        
+        	<div id="social_box">
+                
+                <div class="cleaner"></div>
+			</div>   
+			         
+             <div id="search_box">
+			 
+                <form action="rcherche.php" method="post">
+                    <input type="text" value="Chercher" name="q" size="10" id="searchfield" title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
+                  <input type="submit" name="Search" value="" id="searchbutton" title="Search" />
+                </form>
+            </div>
+            	
+        </div>
+	</div>
+</div>
+
+<div id="tooplate_middle_wrapper">
+	<div id="tooplate_middle">
+    
+  <img src="image/conference.jpg" alt="Image 01" />
+     <div id="middle_content">
+       <form method="post" action="confirm_conect.php" id="form">
+ <table border="0" align="center" width="50%">
+  <tr>
+    <td height="53" align="center" ><input type="text" placeholder="Login" class="input" name="login" required/></td>
+  
+  
+    <td height="53" align="center" ><input type="password" placeholder="mot de passe" class="input" name="pwd" required /></td>
+  </tr>
+ <tr><td align="center">
+  <select name="type">
+  <option value="" selected="selected">choisir type</option>
+  <option value="responsable">Responsable</option>
+   <option value="examinateur">Examinateur</option>
+    <option value="auteur">auteur</option>
+	<option value="admin">Administrateur</option>
+
+  
+  </select>
+ </td>
+ </tr>
+  <tr>
+    <td height="56" align="center" ><input id="Button1" type="submit" value="Connexion" width="101px" height="30px" class="submit"  /> </td>
+  </tr><tr><td width="465" height="22" align="center">
+	<a href="pass_oublie.php"  class="lien" >Mot de passe oublié?</a> </td><td>  <a href="inscription.php" class="lien">Creer un compte</a> </td>
+  <td width="101"></td>
+  </tr>
+</table>
+
+</form>
+
+           <!-- <div class="wwu_btn"><a href="#"></a></div>-->
+        </div>
+		</div>
+</div>
+
+ <div id="tooplate_menu">
+                
+    <ul>
+         <li><a href="index.html" class="current">Acceuil</a></li>
+       <li><a href="conference.php">Conf&eacute;rence</a></li>
+       
+      <li><a href="inscription.php">Inscription</a></li>
+			<li><a href="soumettre_papier.php">Papier</a></li>
+			<li><a href="contact.php">Contact</a></li>
+    </ul>    	
+
+	<div class="cleaner"></div>
+</div> <!-- end of tooplate_menu -->
+    
+<div id="tooplate_content">
+<h4 align="center" class="Style3"><span class="Style2">Bienvenue dans notre site</span></h4>
+<hr align="center" color="#663300" />
+<table><tr><td></td>
+<td>
+  <div align="justify">Une conf&eacuterence scientifique est un &eacute;v&eacute;nement qui vise &aacute; rassembler des chercheurs et ing&eacutenieurs d'un domaine pour faire &eacute;tat de leurs avanc&eacutees. Cela permet &eacutegalement &Aacute; des coll&eacutegues g&eacuteographiquement &eacuteloign&eacutes de nouer et d'entretenir des contacts. Les congr&eacutes se r&eacutep&eacutetent g&eacuten&eacuteralement avec une p&eacuteriodicit&eacute fix&eacutee, le plus souvent annuelle</div></td></tr></table>
+<table><tr><td width="970" height="268"><div align="justify">Tous les chercheurs, universitaires et praticiens s'int&eacute;ressant aux th&egrave;mes de la conf&eacute;rence sont invit&eacute;s &agrave; soumettre leurs communications. Deux types de contributions pourront &ecirc;tre pr&eacute;sent&eacute;es :&nbsp;<br />
+  Les papiers seront &eacute;valu&eacute;s par rapport &agrave; leur originalit&eacute;, leur coh&eacute;rence, leur clart&eacute; et leur contribution scientifique. Chaque papier sera r&eacute;vis&eacute; en aveugle &agrave; l'aide d'une grille d'&eacute;valuation. Les papiers de recherche seront r&eacute;vis&eacute;s par les membres du comit&eacute; scientifique. Les papiers en format court seront r&eacute;vis&eacute;s par l'&eacute;diteur. Chaque auteur recevra apr&egrave;s la r&eacute;vision de son papier une fiche de synth&egrave;se des &eacute;valuations. Les commentaires et suggestions de cette r&eacute;vision doivent &ecirc;tre prises en compte dans la soumission finale.<br />
+  Les papiers soumis ne doivent pas avoir &eacute;t&eacute; pr&eacute;c&eacute;demment &eacute;dit&eacute;s ou actuellement soumis pour publication dans d'autres conf&eacute;rences ou revues.<br />
+  Les actes de la conf&eacute;rence seront &eacute;dit&eacute;s sous forme d'un e-book sur un CD (avec ISBN).<br />
+  Tous les papiers se rattacheront &agrave; l'un des th&egrave;mes propos&eacute;s</div></td><td width="24">&nbsp;</td>
+</tr></table></p> 	</div>
+<div id="tooplate_footer_wrapper">
+     <div id="tooplate_footer">
+     
+        Copyright &copy; 2048 <a href="#">Company Name</a>
+    
+    </div> <!-- end of tooplate_footer -->
+</div> 
+</body>
+</html>
